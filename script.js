@@ -13,8 +13,8 @@ const nuovaEmail = prompt('Inserisci la tua email:');
 emailArray.push(nuovaEmail);
 
 
-// Inizializza la stringa del risultato
-let risultato = '';
+// Inizializza la stringa del risultato con variabile 
+let risultato = false;
 
 // Utilizzo di un ciclo for per visualizzare ogni email
 for (let i = 0; i < emailArray.length; i++) {
@@ -23,23 +23,26 @@ for (let i = 0; i < emailArray.length; i++) {
 
     // Verifica se l'utente può entrare
     if (nuovaEmail === emailArray[i]) {
-        console.log("puoi entrare");
-        risultato = 'Puoi entrare'
+        
+        risultato = true;
 
-    } else {
-
-        console.log("non puoi entrare");
-        risultato = 'Non puoi entrare'
-    
-    }
-
-    const risultato = < li class = {risultato} ></li>
-    
+    } 
 }
 
+ // Stampa un messaggio in base al risultato
+    if (risultato = true) {
+        
+        console.log('Puoi entrare');
 
-// Che me lo stampa in console nel browser
-console.log(emailArray);
+    } else {
+        console.log('Non puoi entrare');
+
+    }
+
+    console.log(emailArray);
+
+
+
 
 
 
