@@ -12,6 +12,22 @@ const nuovaEmail = prompt('Inserisci la tua email:');
 emailArray.push(nuovaEmail);
 
 
+// Utilizzo di un ciclo for per visualizzare ogni email
+for (let i = 0; i < emailArray.length; i++) {
+
+    console.log(emailArray[i]);
+
+    if (nuovaEmail === emailArray) {
+
+        console.log("puoi entrare");
+
+    } else {
+
+        console.log("non puoi entrare")
+    }
+}
+
+
 // Che me lo stampa in console nel browser
 console.log(emailArray);
 
